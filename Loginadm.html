@@ -1,0 +1,53 @@
+{% extends 'Layouts/main.html' %}
+{% load static %}
+{% block content %}
+
+    <form action="/outfitadm/admLogintask">
+        <br><br>
+        <div class="headcontainer">
+            <div class="row">
+
+    <div class="col-md-4">
+        <img src="{%static 'Images/Women/Aurelia-ethnic3.jpeg'%}" class="img-responsive"
+          style="width:75%; height:250px" alt="Image">
+          
+      </div>
+      <div class="col-md-5">
+        <div class="container bg-dark"
+            style="text-align:center; height: 30px; width: 100%; color:white">
+            <h6>Admin Login Form</h6>
+          </div>
+          <div class="container"
+          style="text-align:left; height: 150px; width: 100%;color:#000000; font-size: 14px">
+
+          <br><br>
+          <table style="font-weight:bold">
+            <tr><td>Admin Email-id</td>
+                <td>
+                <input type="email" class="form-control" id="Email" name="Email" placeholder="Enter Email" onkeyup="chkemail()">
+                </td>
+                <td><span id="err1"></span></td>
+            </tr>             
+            <tr><td>Password</td>
+                <td>
+                <input type="password" class="form-control" id="pwd" name="pwd" placeholder="Enter Password" onkeyup="passvalid()">
+            </td>
+            <td><span id="err2"></span></td>
+            </tr></table>
+        </div>
+        <div class="container bg-dark"
+            style="text-align:center; height: 30px; width: 100%; color:white; text-align:center">
+            <div class="row">
+              <div class="col">
+                <button type="submit" class="btn btn-dark"  
+                style="color:white;font-size:small;height:25px; text-align:center">
+                <b>Login</b></button>
+              </div>
+          </div>
+        </div>
+        
+        </div>
+    </div>
+</form>
+
+{% endblock content %}

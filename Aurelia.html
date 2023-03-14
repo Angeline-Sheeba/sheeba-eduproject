@@ -1,0 +1,306 @@
+{% extends 'Layouts/main1.html' %}
+{% load static %}
+
+{% block content %}
+<form action="">
+<div class="container">
+    <h3 style="color:crimson"><b>Dear Customer!! Welcome to Aurelia Products</b></h3>
+
+<section>
+<div class="text-Left container py-1">
+    <h4 class="mt-4 mb-3" style="color:Maroon"><strong>Kurtas</strong></h4>
+
+    <div class="row">
+        <div class="col-sm-2">
+            <div class="card">
+                    
+                    <a href="/aurelia1"  class="text-reset">
+                        <h6 strong="color:crimson" class="card-title">Aurelia</h6>
+                    </a>
+                <div class="card-body"> 
+                            <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light"
+                                data-mdb-ripple-color="light">
+                                <img src="{% static 'Images/Women/Aurelia-kurtis1.jpeg' %}" 
+                                class="w-75" />
+                                <a href="/aurelia1">
+                                <div class="hover-overlay">
+                                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                                </div>
+                                </a>
+                            </div>
+                        
+                </div>  
+            </div> 
+        </div>
+        <div class="col-sm-9">
+            
+                <table style="font-weight:bold">
+                    
+                    <tr>
+                        <td>ProductName</td>
+                        <td>
+                            <input type="text" name = "PName" value="Aurelia Kurta"> 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>BrandName</td>
+                        <td><input type="text" name = "BName" value="Aurelia"> </td>
+                    </tr>
+                    <tr>
+                        <td>Size</td>
+                        <td>
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">S</label>                    
+                          
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                            <label class="form-check-label" for="flexRadioDefault2">M</label>
+                                                  
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                            <label class="form-check-label" for="flexRadioDefault2">L</label>
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                            <label class="form-check-label" for="flexRadioDefault2">XL</label>
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                            <label class="form-check-label" for="flexRadioDefault2">XXL</label>
+                          </td>
+                    </tr>
+                    <tr>
+                        <td>Price</td>
+                        <td><input type="text" id="price" name = "Price" value="1500.00"> </td>
+                    </tr>
+                </tr> <tr>
+                    <td>Quantity</td>
+                    <td>
+                             
+                      <input id="form1" min="0" name="quantity" value="1" type="number"
+                        class="form-control form-control-sm" />
+      
+                     </td>
+                </tr>
+                
+        </table>
+    </div>
+<br><br>
+    <div class="row">
+        <div class="col-sm-2">
+            <div class="card">
+                    
+                    <a href="/aurelia2"  class="text-reset">
+                        <h6 strong="color:crimson" class="card-title">Aurelia</h6>
+                    </a>
+                <div class="card-body"> 
+                            <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light"
+                                data-mdb-ripple-color="light">
+                                <img src="{% static 'Images/Women/Aurelia-kurtis2.jpeg' %}" 
+                                class="w-75" />
+                                <a href="/aurelia2">
+                                <div class="hover-overlay">
+                                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                                </div>
+                                </a>
+                            </div>
+                        
+                </div>  
+            </div> 
+        </div>
+        <div class="col-sm-9">
+            
+                <table style="font-weight:bold">
+                    
+                    <tr>
+                        <td>ProductName</td>
+                        <td>
+                            <input type="text" name = "Name" value="Aurelia Kurta2"> 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>BrandName</td>
+                        <td><input type="text" name = "Name" value="Aurelia"> </td>
+                    </tr>
+                    <tr>
+                        <td>Size</td>
+                        <td>
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">S</label>                    
+                          
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                            <label class="form-check-label" for="flexRadioDefault2">M</label>
+                                                  
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                            <label class="form-check-label" for="flexRadioDefault2">L</label>
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                            <label class="form-check-label" for="flexRadioDefault2">XL</label>
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                            <label class="form-check-label" for="flexRadioDefault2">XXL</label>
+                          </td>
+                    </tr>
+                    <tr>
+                        <td>Price</td>
+                        <td><input type="text" id="price" name = "Name" value="1000.00"> </td>
+                    </tr>
+                </tr> <tr>
+                    <td>Quantity</td>
+                    <td>
+                             
+                      <input id="form1" min="0" name="quantity" value="1" type="number"
+                        class="form-control form-control-sm" />
+      
+                     </td>
+                </tr>
+                
+                
+           </table>
+    </div>
+        
+<br><br>
+<div class="text-left container py-1">
+        <h4 class="mt-4 mb-3" style="color:Maroon"><strong>Ethnic Wear</strong></h4>
+        <div class="row">
+            <div class="col-sm-2">
+                <div class="card">
+                        
+                        <a href="/aurelia3"  class="text-reset">
+                            <h6 strong="color:crimson" class="card-title">Aurelia</h6>
+                        </a>
+                    <div class="card-body"> 
+                                <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light"
+                                    data-mdb-ripple-color="light">
+                                    <img src="{% static 'Images/Women/Aurelia-ethnic1.jpeg' %}" 
+                                    class="w-75" />
+                                    <a href="/aurelia3">
+                                    <div class="hover-overlay">
+                                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                                    </div>
+                                    </a>
+                                </div>
+                            
+                    </div>  
+                </div> 
+            </div>
+            <div class="col-sm-9">
+                
+                    <table style="font-weight:bold">
+                        
+                        <tr>
+                            <td>ProductName</td>
+                            <td>
+                                <input type="text" name = "Name" value="Aurelia Ethnic1"> 
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>BrandName</td>
+                            <td><input type="text" name = "Name" value="Aurelia"> </td>
+                        </tr>
+                        <tr>
+                            <td>Size</td>
+                            <td>
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">S</label>                    
+                              
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                <label class="form-check-label" for="flexRadioDefault2">M</label>
+                                                      
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                <label class="form-check-label" for="flexRadioDefault2">L</label>
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                <label class="form-check-label" for="flexRadioDefault2">XL</label>
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                <label class="form-check-label" for="flexRadioDefault2">XXL</label>
+                              </td>
+                        </tr>
+                        <tr>
+                            <td>Price</td>
+                            <td><input type="text" id="price" name = "Name" value="1500.00"> </td>
+                        </tr>
+                    </tr> <tr>
+                        <td>Quantity</td>
+                        <td>
+                                 
+                          <input id="form1" min="0" name="quantity" value="1" type="number"
+                            class="form-control form-control-sm" />
+          
+                         </td>
+                    </tr>
+                    
+                    
+    
+               </table>
+        </div>
+    <br>
+        <div class="row">
+            <div class="col-sm-2">
+                <div class="card">
+                        
+                        <a href="/aurelia4"  class="text-reset">
+                            <h6 strong="color:crimson" class="card-title">Aurelia</h6>
+                        </a>
+                    <div class="card-body"> 
+                                <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light"
+                                    data-mdb-ripple-color="light">
+                                    <img src="{% static 'Images/Women/Aurelia-ethnic2.jpeg' %}" 
+                                    class="w-75" />
+                                    <a href="/aurelia4">
+                                    <div class="hover-overlay">
+                                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                                    </div>
+                                    </a>
+                                </div>
+                            
+                    </div>  
+                </div> 
+            </div>
+            <div class="col-sm-9">
+                
+                    <table style="font-weight:bold">
+                        
+                        <tr>
+                            <td>ProductName</td>
+                            <td>
+                                <input type="text" name = "Name" value="Aurelia Ethnic2"> 
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>BrandName</td>
+                            <td><input type="text" name = "Name" value="Aurelia"> </td>
+                        </tr>
+                        <tr>
+                            <td>Size</td>
+                            <td>
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">S</label>                    
+                              
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                <label class="form-check-label" for="flexRadioDefault2">M</label>
+                                                      
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                <label class="form-check-label" for="flexRadioDefault2">L</label>
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                <label class="form-check-label" for="flexRadioDefault2">XL</label>
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                <label class="form-check-label" for="flexRadioDefault2">XXL</label>
+                              </td>
+                        </tr>
+                        <tr>
+                            <td>Price</td>
+                            <td><input type="text" id="price" name = "Name" value="1200.00"> </td>
+                        </tr>
+                    </tr> <tr>
+                        <td>Quantity</td>
+                        <td>
+                                 
+                          <input id="form1" min="0" name="quantity" value="1" type="number"
+                            class="form-control form-control-sm" />
+          
+                         </td>
+                    </tr>
+                    
+                   
+    
+               </table>
+        </div>
+        
+</div>
+
+</section>
+</div>
+</form>
+{% endblock content %}

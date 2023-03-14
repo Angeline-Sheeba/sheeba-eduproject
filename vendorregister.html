@@ -1,0 +1,88 @@
+{% extends 'Layouts/main.html' %}
+{% load static %}
+{% block content %}
+<script src="{% static 'JS/valid.js' %}"></script>
+    <form action="/outfitvendor/Insert">
+      <br>
+        <div class="container">
+            
+        <div class="row">
+
+          <div class="col-md-6">
+            <img src="{%static 'Images/Men/PEF1.jpeg'%}" class="img-responsive" style="width:75%; height:300px"
+            alt="Image">
+
+            </div>
+
+          <div class="col-md-6">
+              <div class="container bg-dark"
+                  style="text-align:center; height: 30px; width: 100%; color:white">
+                  <h6>Vendor Registration Form</h6>
+              </div>
+
+              <div class="container"
+              style="text-align:left; height: 230px; width: 100%;color:#000000; font-size: 12px">
+              <br>
+                <table>
+                <tr>
+                  <td> Vendor Name</td>
+                  <td>
+                    <input type="text" class="form-control" id="Name" name="Name" placeholder="Enter Name" onkeyup="onlyalpha()">
+
+                  </td>
+                  <td>
+                    <span id="err"></span>           
+                  </td>
+                </tr>
+                <tr> 
+                  <td>Email</td>
+                  <td>
+                    <input type="email" class="form-control" id="Email" name="Email"  placeholder="Enter Email" onkeyup="chkemail()">
+                  </td>
+                  <td>
+                    <span id="err1"></span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Password</td>
+                  <td>
+                    <input type="password" class="form-control" id="pwd" name="pwd"  placeholder="Enter Password" onkeyup="passvalid()">
+                  </td>
+                  <td>
+                    <span id="err2"></span>
+                  </td>
+                </tr>                
+                
+                <tr> <td>Address</td>
+                    <td>
+                  <input type="text" class="form-control" id="addr" name="addr"  placeholder="Enter Address">
+                    </td>
+                    <td>
+                  <span id="err5"></span>
+                    </td>
+                  </tr>
+                <tr><td> Mobile No</td>
+                  <td>
+                <input type="Number" class="form-control" id="mobno" name="mobno"  placeholder="Enter Mobile Number" onkeyup="checkmob()">
+                  </td>
+                  <td>
+                <span id="err4"></span>
+                  </td>
+                </tr>
+
+                
+                
+              </table>
+                </div>
+            
+            <div class="container bg-dark"
+              style="text-align:center; height: 30px; width: 100%; color:white; text-align:center">
+              <button class="btn btn-dark"  type="Register" onclick="NameValid()"
+               style="text-align=center;color=white; height:30px;font-weight=bold">
+                 Register</button><br>
+            </div>
+      </div>
+      <div>
+</form>
+
+{% endblock content %}
